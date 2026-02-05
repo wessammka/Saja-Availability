@@ -1,12 +1,12 @@
 <div class="spreadsheet-container">
   <iframe 
-    src="https://docs.google.com/spreadsheets/d/12_mJNR2OxgEjwqARdQ7GF_bVPDXeehYqQvSbsjSRwH0/preview?rm=minimal&headers=false" 
-    frameborder="0">
+    src="https://docs.google.com/spreadsheets/d/12_mJNR2OxgEjwqARdQ7GF_bVPDXeehYqQvSbsjSRwH0/preview?rm=minimal&headers=false&widget=true&chrome=false" 
+    frameborder="0"
+    loading="lazy">
   </iframe>
 </div>
 
 <style>
-  /* Remove default body margins */
   body, html {
     margin: 0;
     padding: 0;
@@ -15,8 +15,9 @@
   }
   
   .spreadsheet-container {
-    width: 100vw;  /* 100% of viewport width */
-    height: 100vh; /* 100% of viewport height */
+    width: 100vw;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   }
   
   .spreadsheet-container iframe {
@@ -24,5 +25,8 @@
     height: 100%;
     border: 0;
     display: block;
+    /* Performance improvements for mobile Chrome */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
   }
 </style>
