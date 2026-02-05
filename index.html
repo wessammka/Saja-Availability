@@ -1,32 +1,10 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
 <div class="spreadsheet-container">
   <iframe 
     src="https://docs.google.com/spreadsheets/d/12_mJNR2OxgEjwqARdQ7GF_bVPDXeehYqQvSbsjSRwH0/preview?rm=minimal&headers=false&widget=true&chrome=false" 
     frameborder="0"
+    sandbox="allow-scripts allow-same-origin allow-popups"
     loading="lazy">
   </iframe>
 </div>
-
-<style>
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .spreadsheet-container {
-    width: 100vw;
-    height: 100vh;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  }
-  
-  .spreadsheet-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
-    display: block;
-    /* Performance improvements for mobile Chrome */
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-  }
-</style>
