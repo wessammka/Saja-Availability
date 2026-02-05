@@ -1,35 +1,28 @@
 <div class="spreadsheet-container">
-  <div class="spreadsheet-wrapper">
-    <iframe 
-      src="https://docs.google.com/spreadsheets/d/12_mJNR2OxgEjwqARdQ7GF_bVPDXeehYqQvSbsjSRwH0/preview?rm=minimal&headers=false" 
-      frameborder="0">
-    </iframe>
-  </div>
+  <iframe 
+    src="https://docs.google.com/spreadsheets/d/12_mJNR2OxgEjwqARdQ7GF_bVPDXeehYqQvSbsjSRwH0/preview?rm=minimal&headers=false" 
+    frameborder="0">
+  </iframe>
 </div>
 
 <style>
-  .spreadsheet-container {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .spreadsheet-wrapper {
-    position: relative;
-    width: 100%;
-    padding-bottom: 75%; /* This creates a 4:3 aspect ratio (75% = 3/4) */
+  /* Remove default body margins */
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
   
-  .spreadsheet-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .spreadsheet-container {
+    width: 100vw;  /* 100% of viewport width */
+    height: 100vh; /* 100% of viewport height */
+  }
+  
+  .spreadsheet-container iframe {
     width: 100%;
     height: 100%;
     border: 0;
+    display: block;
   }
 </style>
